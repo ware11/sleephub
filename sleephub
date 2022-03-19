@@ -252,7 +252,7 @@ TextButton.MouseButton1Down:Connect(function()
 	sleephubmain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	sleephubmain.Enabled = true
 	sleephubmain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	sleephubmain.ResetOnSpawn =true
+	sleephubmain.ResetOnSpawn =false
 
 	Frame.Parent = sleephubmain
 	Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
