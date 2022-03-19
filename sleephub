@@ -1,0 +1,2161 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local sleephublobby = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIGradient_4 = Instance.new("UIGradient")
+local UIGradient_5 = Instance.new("UIGradient")
+
+--Properties:
+
+sleephublobby.Name = "sleephublobby"
+sleephublobby.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+sleephublobby.Enabled = true
+sleephublobby.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+sleephublobby.ResetOnSpawn=true
+
+Frame.Parent = sleephublobby
+Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 599, 0, 250)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 500, 0, 265)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 25, 0, 7)
+Frame_2.Size = UDim2.new(0, 5, 0, 250)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Frame_2
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Frame_2
+
+UICorner_2.CornerRadius = UDim.new(0.0250000004, 0)
+UICorner_2.Parent = Frame
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, 0, 245)
+Frame_3.Size = UDim2.new(0, 500, 0, 25)
+
+UICorner_3.CornerRadius = UDim.new(0, 2)
+UICorner_3.Parent = Frame_3
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Frame_3
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 55, 0, 10)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Welcome,"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 36.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 55, 0, 55)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "N/A"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 33.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 3
+ImageLabel.Position = UDim2.new(0, 283, 0, 19)
+ImageLabel.Size = UDim2.new(0, 200, 0, 200)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = ImageLabel
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextButton.Position = UDim2.new(0, 55, 0, 145)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "Continue"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local sleephubmain = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Frame_2 = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local UIGradient = Instance.new("UIGradient")
+	local Frame_3 = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local UIGradient_2 = Instance.new("UIGradient")
+	local UIGradient_3 = Instance.new("UIGradient")
+	local Grips = Instance.new("TextButton")
+	local Frame_4 = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
+	local UIGradient_4 = Instance.new("UIGradient")
+	local UIGradient_5 = Instance.new("UIGradient")
+	local Grips_2 = Instance.new("Frame")
+	local UIGradient_6 = Instance.new("UIGradient")
+	local Lowhold = Instance.new("TextButton")
+	local UICorner_5 = Instance.new("UICorner")
+	local Frame_5 = Instance.new("Frame")
+	local UICorner_6 = Instance.new("UICorner")
+	local UIGradient_7 = Instance.new("UIGradient")
+	local UIGradient_8 = Instance.new("UIGradient")
+	local UIListLayout = Instance.new("UIListLayout")
+	local Shoulder = Instance.new("TextButton")
+	local UICorner_7 = Instance.new("UICorner")
+	local Frame_6 = Instance.new("Frame")
+	local UICorner_8 = Instance.new("UICorner")
+	local UIGradient_9 = Instance.new("UIGradient")
+	local UIGradient_10 = Instance.new("UIGradient")
+	local NormalHold = Instance.new("TextButton")
+	local UICorner_9 = Instance.new("UICorner")
+	local Frame_7 = Instance.new("Frame")
+	local UICorner_10 = Instance.new("UICorner")
+	local UIGradient_11 = Instance.new("UIGradient")
+	local UIGradient_12 = Instance.new("UIGradient")
+	local Weeni = Instance.new("TextButton")
+	local UICorner_11 = Instance.new("UICorner")
+	local Frame_8 = Instance.new("Frame")
+	local UICorner_12 = Instance.new("UICorner")
+	local UIGradient_13 = Instance.new("UIGradient")
+	local UIGradient_14 = Instance.new("UIGradient")
+	local gun = Instance.new("TextButton")
+	local UICorner_13 = Instance.new("UICorner")
+	local Frame_9 = Instance.new("Frame")
+	local UICorner_14 = Instance.new("UICorner")
+	local UIGradient_15 = Instance.new("UIGradient")
+	local UIGradient_16 = Instance.new("UIGradient")
+	local TextButton = Instance.new("TextButton")
+	local UICorner_15 = Instance.new("UICorner")
+	local Frame_10 = Instance.new("Frame")
+	local UICorner_16 = Instance.new("UICorner")
+	local UIGradient_17 = Instance.new("UIGradient")
+	local UIGradient_18 = Instance.new("UIGradient")
+	local cancel = Instance.new("TextButton")
+	local UICorner_17 = Instance.new("UICorner")
+	local Frame_11 = Instance.new("Frame")
+	local UICorner_18 = Instance.new("UICorner")
+	local UIGradient_19 = Instance.new("UIGradient")
+	local UIGradient_20 = Instance.new("UIGradient")
+	local UICorner_19 = Instance.new("UICorner")
+	local Presets = Instance.new("TextButton")
+	local UICorner_20 = Instance.new("UICorner")
+	local Frame_12 = Instance.new("Frame")
+	local UICorner_21 = Instance.new("UICorner")
+	local UIGradient_21 = Instance.new("UIGradient")
+	local Presets_2 = Instance.new("Frame")
+	local UIListLayout_2 = Instance.new("UIListLayout")
+	local hat = Instance.new("TextButton")
+	local UICorner_22 = Instance.new("UICorner")
+	local Frame_13 = Instance.new("Frame")
+	local UICorner_23 = Instance.new("UICorner")
+	local UIGradient_22 = Instance.new("UIGradient")
+	local wings = Instance.new("TextButton")
+	local UICorner_24 = Instance.new("UICorner")
+	local Frame_14 = Instance.new("Frame")
+	local UICorner_25 = Instance.new("UICorner")
+	local UIGradient_23 = Instance.new("UIGradient")
+	local ufo = Instance.new("TextButton")
+	local UICorner_26 = Instance.new("UICorner")
+	local Frame_15 = Instance.new("Frame")
+	local UICorner_27 = Instance.new("UICorner")
+	local UIGradient_24 = Instance.new("UIGradient")
+	local stand = Instance.new("TextButton")
+	local UICorner_28 = Instance.new("UICorner")
+	local Frame_16 = Instance.new("Frame")
+	local UICorner_29 = Instance.new("UICorner")
+	local UIGradient_25 = Instance.new("UIGradient")
+	local scythe = Instance.new("TextButton")
+	local UICorner_30 = Instance.new("UICorner")
+	local Frame_17 = Instance.new("Frame")
+	local UICorner_31 = Instance.new("UICorner")
+	local UIGradient_26 = Instance.new("UIGradient")
+	local cancel_2 = Instance.new("TextButton")
+	local UICorner_32 = Instance.new("UICorner")
+	local Frame_18 = Instance.new("Frame")
+	local UICorner_33 = Instance.new("UICorner")
+	local UIGradient_27 = Instance.new("UIGradient")
+	local Frame_19 = Instance.new("Frame")
+	local UICorner_34 = Instance.new("UICorner")
+	local UIGradient_28 = Instance.new("UIGradient")
+	local TextLabel = Instance.new("TextLabel")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local Dupe = Instance.new("TextButton")
+	local UICorner_35 = Instance.new("UICorner")
+	local Frame_20 = Instance.new("Frame")
+	local UICorner_36 = Instance.new("UICorner")
+	local UIGradient_29 = Instance.new("UIGradient")
+	local Amount = Instance.new("TextBox")
+	local UICorner_37 = Instance.new("UICorner")
+	local Frame_21 = Instance.new("Frame")
+	local UICorner_38 = Instance.new("UICorner")
+	local UIGradient_30 = Instance.new("UIGradient")
+	local gtools = Instance.new("TextButton")
+	local UICorner_39 = Instance.new("UICorner")
+	local Frame_22 = Instance.new("Frame")
+	local UICorner_40 = Instance.new("UICorner")
+	local UIGradient_31 = Instance.new("UIGradient")
+	local equiptools = Instance.new("TextButton")
+	local UICorner_41 = Instance.new("UICorner")
+	local Frame_23 = Instance.new("Frame")
+	local UICorner_42 = Instance.new("UICorner")
+	local UIGradient_32 = Instance.new("UIGradient")
+	local DemeshTools = Instance.new("TextButton")
+	local UICorner_43 = Instance.new("UICorner")
+	local Frame_24 = Instance.new("Frame")
+	local UICorner_44 = Instance.new("UICorner")
+	local UIGradient_33 = Instance.new("UIGradient")
+	local Sync = Instance.new("TextButton")
+	local UICorner_45 = Instance.new("UICorner")
+	local Frame_25 = Instance.new("Frame")
+	local UICorner_46 = Instance.new("UICorner")
+	local UIGradient_34 = Instance.new("UIGradient")
+
+	--Properties:
+
+	sleephubmain.Name = "sleephubmain"
+	sleephubmain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	sleephubmain.Enabled = true
+	sleephubmain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	sleephubmain.ResetOnSpawn =true
+
+	Frame.Parent = sleephubmain
+	Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	Frame.BorderSizePixel = 0
+	Frame.Position = UDim2.new(0, 299, 0, 390)
+	Frame.Selectable = true
+	Frame.Size = UDim2.new(0, 1000, 0, 395)
+
+	UICorner.CornerRadius = UDim.new(0.0250000004, 0)
+	UICorner.Parent = Frame
+
+	Frame_2.Parent = Frame
+	Frame_2.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Position = UDim2.new(0, 0, 0, 375)
+	Frame_2.Size = UDim2.new(0, 1000, 0, 25)
+
+	UICorner_2.CornerRadius = UDim.new(0, 2)
+	UICorner_2.Parent = Frame_2
+
+	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient.Parent = Frame_2
+
+	Frame_3.Parent = Frame
+	Frame_3.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+	Frame_3.BorderSizePixel = 0
+	Frame_3.Position = UDim2.new(0, 25, 0, 9)
+	Frame_3.Size = UDim2.new(0, 5, 0, 380)
+
+	UICorner_3.CornerRadius = UDim.new(0, 9)
+	UICorner_3.Parent = Frame_3
+
+	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_2.Parent = Frame_3
+
+	UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_3.Parent = Frame
+
+	Grips.Name = "Grips"
+	Grips.Parent = Frame
+	Grips.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+	Grips.Position = UDim2.new(0, 100, 0, 25)
+	Grips.Size = UDim2.new(0, 200, 0, 25)
+	Grips.Font = Enum.Font.Code
+	Grips.Text = "Grip List"
+	Grips.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Grips.TextSize = 19.000
+
+	Frame_4.Parent = Grips
+	Frame_4.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_4.BorderSizePixel = 0
+	Frame_4.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_4.CornerRadius = UDim.new(0, 2)
+	UICorner_4.Parent = Frame_4
+
+	UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_4.Parent = Frame_4
+
+	UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_5.Parent = Grips
+
+	Grips_2.Name = "Grips"
+	Grips_2.Parent = Grips
+	Grips_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+	Grips_2.BorderSizePixel = 0
+	Grips_2.Position = UDim2.new(0, 0, 0, 38)
+	Grips_2.Size = UDim2.new(0, 200, 0, 300)
+
+	UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_6.Parent = Grips_2
+
+	Lowhold.Name = "Lowhold"
+	Lowhold.Parent = Grips_2
+	Lowhold.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	Lowhold.Position = UDim2.new(0, 100, 0, 25)
+	Lowhold.Size = UDim2.new(0, 200, 0, 25)
+	Lowhold.Font = Enum.Font.Code
+	Lowhold.Text = "Lowhold"
+	Lowhold.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Lowhold.TextSize = 19.000
+
+	UICorner_5.CornerRadius = UDim.new(0, 2)
+	UICorner_5.Parent = Lowhold
+
+	Frame_5.Parent = Lowhold
+	Frame_5.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_5.BorderSizePixel = 0
+	Frame_5.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_6.CornerRadius = UDim.new(0, 2)
+	UICorner_6.Parent = Frame_5
+
+	UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_7.Parent = Frame_5
+
+	UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_8.Parent = Lowhold
+
+	UIListLayout.Parent = Grips_2
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 20)
+
+	Shoulder.Name = "Shoulder"
+	Shoulder.Parent = Grips_2
+	Shoulder.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	Shoulder.Position = UDim2.new(0, 100, 0, 25)
+	Shoulder.Size = UDim2.new(0, 200, 0, 25)
+	Shoulder.Font = Enum.Font.Code
+	Shoulder.Text = "Shoulder"
+	Shoulder.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Shoulder.TextSize = 19.000
+
+	UICorner_7.CornerRadius = UDim.new(0, 2)
+	UICorner_7.Parent = Shoulder
+
+	Frame_6.Parent = Shoulder
+	Frame_6.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_6.BorderSizePixel = 0
+	Frame_6.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_8.CornerRadius = UDim.new(0, 2)
+	UICorner_8.Parent = Frame_6
+
+	UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_9.Parent = Frame_6
+
+	UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_10.Parent = Shoulder
+
+	NormalHold.Name = "Normal Hold"
+	NormalHold.Parent = Grips_2
+	NormalHold.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	NormalHold.Position = UDim2.new(0, 100, 0, 25)
+	NormalHold.Size = UDim2.new(0, 200, 0, 25)
+	NormalHold.Font = Enum.Font.Code
+	NormalHold.Text = "Normal Hold"
+	NormalHold.TextColor3 = Color3.fromRGB(0, 0, 0)
+	NormalHold.TextSize = 19.000
+
+	UICorner_9.CornerRadius = UDim.new(0, 2)
+	UICorner_9.Parent = NormalHold
+
+	Frame_7.Parent = NormalHold
+	Frame_7.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_7.BorderSizePixel = 0
+	Frame_7.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_10.CornerRadius = UDim.new(0, 2)
+	UICorner_10.Parent = Frame_7
+
+	UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_11.Parent = Frame_7
+
+	UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_12.Parent = NormalHold
+
+	Weeni.Name = "Weeni"
+	Weeni.Parent = Grips_2
+	Weeni.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	Weeni.Position = UDim2.new(0, 100, 0, 25)
+	Weeni.Size = UDim2.new(0, 200, 0, 25)
+	Weeni.Font = Enum.Font.Code
+	Weeni.Text = "Weeni"
+	Weeni.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Weeni.TextSize = 19.000
+
+	UICorner_11.CornerRadius = UDim.new(0, 2)
+	UICorner_11.Parent = Weeni
+
+	Frame_8.Parent = Weeni
+	Frame_8.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_8.BorderSizePixel = 0
+	Frame_8.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_12.CornerRadius = UDim.new(0, 2)
+	UICorner_12.Parent = Frame_8
+
+	UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_13.Parent = Frame_8
+
+	UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_14.Parent = Weeni
+
+	gun.Name = "gun"
+	gun.Parent = Grips_2
+	gun.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	gun.Position = UDim2.new(0, 100, 0, 25)
+	gun.Size = UDim2.new(0, 200, 0, 25)
+	gun.Font = Enum.Font.Code
+	gun.Text = "Gun"
+	gun.TextColor3 = Color3.fromRGB(0, 0, 0)
+	gun.TextSize = 19.000
+
+	UICorner_13.CornerRadius = UDim.new(0, 2)
+	UICorner_13.Parent = gun
+
+	Frame_9.Parent = gun
+	Frame_9.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_9.BorderSizePixel = 0
+	Frame_9.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_14.CornerRadius = UDim.new(0, 2)
+	UICorner_14.Parent = Frame_9
+
+	UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_15.Parent = Frame_9
+
+	UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_16.Parent = gun
+
+	TextButton.Parent = Grips_2
+	TextButton.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	TextButton.Position = UDim2.new(0, 100, 0, 25)
+	TextButton.Size = UDim2.new(0, 200, 0, 25)
+	TextButton.Font = Enum.Font.Code
+	TextButton.Text = "Backpack"
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 19.000
+
+	UICorner_15.CornerRadius = UDim.new(0, 2)
+	UICorner_15.Parent = TextButton
+
+	Frame_10.Parent = TextButton
+	Frame_10.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_10.BorderSizePixel = 0
+	Frame_10.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_16.CornerRadius = UDim.new(0, 2)
+	UICorner_16.Parent = Frame_10
+
+	UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_17.Parent = Frame_10
+
+	UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_18.Parent = TextButton
+
+	cancel.Name = "cancel"
+	cancel.Parent = Grips_2
+	cancel.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	cancel.Position = UDim2.new(0, 100, 0, 25)
+	cancel.Size = UDim2.new(0, 200, 0, 25)
+	cancel.Font = Enum.Font.Code
+	cancel.Text = "Cancel"
+	cancel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	cancel.TextSize = 19.000
+
+	UICorner_17.CornerRadius = UDim.new(0, 2)
+	UICorner_17.Parent = cancel
+
+	Frame_11.Parent = cancel
+	Frame_11.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_11.BorderSizePixel = 0
+	Frame_11.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_18.CornerRadius = UDim.new(0, 2)
+	UICorner_18.Parent = Frame_11
+
+	UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_19.Parent = Frame_11
+
+	UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_20.Parent = cancel
+
+	UICorner_19.CornerRadius = UDim.new(0, 2)
+	UICorner_19.Parent = Grips
+
+	Presets.Name = "Presets"
+	Presets.Parent = Frame
+	Presets.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+	Presets.Position = UDim2.new(0, 350, 0, 25)
+	Presets.Size = UDim2.new(0, 200, 0, 25)
+	Presets.Font = Enum.Font.Code
+	Presets.Text = "Presets"
+	Presets.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Presets.TextSize = 19.000
+
+	UICorner_20.CornerRadius = UDim.new(0, 2)
+	UICorner_20.Parent = Presets
+
+	Frame_12.Parent = Presets
+	Frame_12.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_12.BorderSizePixel = 0
+	Frame_12.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_21.CornerRadius = UDim.new(0, 2)
+	UICorner_21.Parent = Frame_12
+
+	UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_21.Parent = Frame_12
+
+	Presets_2.Name = "Presets"
+	Presets_2.Parent = Presets
+	Presets_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+	Presets_2.BorderSizePixel = 0
+	Presets_2.Position = UDim2.new(0, 0, 0, 38)
+	Presets_2.Size = UDim2.new(0, 200, 0, 300)
+
+	UIListLayout_2.Parent = Presets_2
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_2.Padding = UDim.new(0, 20)
+
+	hat.Name = "hat"
+	hat.Parent = Presets_2
+	hat.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	hat.Position = UDim2.new(0, 100, 0, 25)
+	hat.Size = UDim2.new(0, 200, 0, 25)
+	hat.Font = Enum.Font.Code
+	hat.Text = "Hat"
+	hat.TextColor3 = Color3.fromRGB(0, 0, 0)
+	hat.TextSize = 19.000
+
+	UICorner_22.CornerRadius = UDim.new(0, 2)
+	UICorner_22.Parent = hat
+
+	Frame_13.Parent = hat
+	Frame_13.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_13.BorderSizePixel = 0
+	Frame_13.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_23.CornerRadius = UDim.new(0, 2)
+	UICorner_23.Parent = Frame_13
+
+	UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_22.Parent = Frame_13
+
+	wings.Name = "wings"
+	wings.Parent = Presets_2
+	wings.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	wings.Position = UDim2.new(0, 100, 0, 25)
+	wings.Size = UDim2.new(0, 200, 0, 25)
+	wings.Font = Enum.Font.Code
+	wings.Text = "Wings"
+	wings.TextColor3 = Color3.fromRGB(0, 0, 0)
+	wings.TextSize = 19.000
+
+	UICorner_24.CornerRadius = UDim.new(0, 2)
+	UICorner_24.Parent = wings
+
+	Frame_14.Parent = wings
+	Frame_14.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_14.BorderSizePixel = 0
+	Frame_14.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_25.CornerRadius = UDim.new(0, 2)
+	UICorner_25.Parent = Frame_14
+
+	UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_23.Parent = Frame_14
+
+	ufo.Name = "ufo"
+	ufo.Parent = Presets_2
+	ufo.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	ufo.Position = UDim2.new(0, 100, 0, 25)
+	ufo.Size = UDim2.new(0, 200, 0, 25)
+	ufo.Font = Enum.Font.Code
+	ufo.Text = "Ufo"
+	ufo.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ufo.TextSize = 19.000
+
+	UICorner_26.CornerRadius = UDim.new(0, 2)
+	UICorner_26.Parent = ufo
+
+	Frame_15.Parent = ufo
+	Frame_15.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_15.BorderSizePixel = 0
+	Frame_15.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_27.CornerRadius = UDim.new(0, 2)
+	UICorner_27.Parent = Frame_15
+
+	UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_24.Parent = Frame_15
+
+	stand.Name = "stand"
+	stand.Parent = Presets_2
+	stand.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	stand.Position = UDim2.new(0, 100, 0, 25)
+	stand.Size = UDim2.new(0, 200, 0, 25)
+	stand.Font = Enum.Font.Code
+	stand.Text = "Stand"
+	stand.TextColor3 = Color3.fromRGB(0, 0, 0)
+	stand.TextSize = 19.000
+
+	UICorner_28.CornerRadius = UDim.new(0, 2)
+	UICorner_28.Parent = stand
+
+	Frame_16.Parent = stand
+	Frame_16.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_16.BorderSizePixel = 0
+	Frame_16.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_29.CornerRadius = UDim.new(0, 2)
+	UICorner_29.Parent = Frame_16
+
+	UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_25.Parent = Frame_16
+
+	scythe.Name = "scythe"
+	scythe.Parent = Presets_2
+	scythe.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	scythe.Position = UDim2.new(0, 100, 0, 25)
+	scythe.Size = UDim2.new(0, 200, 0, 25)
+	scythe.Font = Enum.Font.Code
+	scythe.Text = "Scythe"
+	scythe.TextColor3 = Color3.fromRGB(0, 0, 0)
+	scythe.TextSize = 19.000
+
+	UICorner_30.CornerRadius = UDim.new(0, 2)
+	UICorner_30.Parent = scythe
+
+	Frame_17.Parent = scythe
+	Frame_17.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_17.BorderSizePixel = 0
+	Frame_17.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_31.CornerRadius = UDim.new(0, 2)
+	UICorner_31.Parent = Frame_17
+
+	UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_26.Parent = Frame_17
+
+	cancel_2.Name = "cancel"
+	cancel_2.Parent = Presets_2
+	cancel_2.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+	cancel_2.Position = UDim2.new(0, 100, 0, 25)
+	cancel_2.Size = UDim2.new(0, 200, 0, 25)
+	cancel_2.Font = Enum.Font.Code
+	cancel_2.Text = "Cancel"
+	cancel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	cancel_2.TextSize = 19.000
+
+	UICorner_32.CornerRadius = UDim.new(0, 2)
+	UICorner_32.Parent = cancel_2
+
+	Frame_18.Parent = cancel_2
+	Frame_18.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_18.BorderSizePixel = 0
+	Frame_18.Size = UDim2.new(0, 200, 0, 2)
+
+	UICorner_33.CornerRadius = UDim.new(0, 2)
+	UICorner_33.Parent = Frame_18
+
+	UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_27.Parent = Frame_18
+
+	Frame_19.Parent = Frame
+	Frame_19.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_19.BorderSizePixel = 0
+	Frame_19.Position = UDim2.new(0, 0, 0, -30)
+	Frame_19.Size = UDim2.new(0, 400, 0, 25)
+
+	UICorner_34.CornerRadius = UDim.new(0, 2)
+	UICorner_34.Parent = Frame_19
+
+	UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_28.Parent = Frame_19
+
+	TextLabel.Parent = Frame_19
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(0, 1, 0, 0)
+	TextLabel.Size = UDim2.new(0, 400, 0, 25)
+	TextLabel.Font = Enum.Font.Code
+	TextLabel.Text = "Sleep hub [V1]"
+	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.TextSize = 14.000
+
+	TextLabel_2.Parent = Frame_19
+	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.BackgroundTransparency = 1.000
+	TextLabel_2.Size = UDim2.new(0, 400, 0, 25)
+	TextLabel_2.Font = Enum.Font.Code
+	TextLabel_2.Text = "Sleep hub [V1]"
+	TextLabel_2.TextColor3 = Color3.fromRGB(227, 227, 227)
+	TextLabel_2.TextSize = 14.000
+
+	Dupe.Name = "Dupe"
+	Dupe.Parent = Frame
+	Dupe.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	Dupe.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	Dupe.Position = UDim2.new(0, 600, 0, 99)
+	Dupe.Size = UDim2.new(0, 265, 0, 75)
+	Dupe.Font = Enum.Font.Code
+	Dupe.Text = "Dupe Amount"
+	Dupe.TextColor3 = Color3.fromRGB(112, 112, 112)
+	Dupe.TextSize = 14.000
+
+	UICorner_35.CornerRadius = UDim.new(0, 3)
+	UICorner_35.Parent = Dupe
+
+	Frame_20.Parent = Dupe
+	Frame_20.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_20.BorderSizePixel = 0
+	Frame_20.Size = UDim2.new(0, 264, 0, 2)
+
+	UICorner_36.CornerRadius = UDim.new(0, 2)
+	UICorner_36.Parent = Frame_20
+
+	UIGradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_29.Parent = Frame_20
+
+	Amount.Name = "Amount"
+	Amount.Parent = Frame
+	Amount.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	Amount.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	Amount.Position = UDim2.new(0, 600, 0, 30)
+	Amount.Size = UDim2.new(0, 265, 0, 50)
+	Amount.Font = Enum.Font.Code
+	Amount.PlaceholderColor3 = Color3.fromRGB(112, 112, 112)
+	Amount.PlaceholderText = "Amount"
+	Amount.Text = ""
+	Amount.TextColor3 = Color3.fromRGB(255, 255, 255111)
+	Amount.TextSize = 14.000
+
+	UICorner_37.CornerRadius = UDim.new(0, 3)
+	UICorner_37.Parent = Amount
+
+	Frame_21.Parent = Amount
+	Frame_21.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_21.BorderSizePixel = 0
+	Frame_21.Size = UDim2.new(0, 264, 0, 2)
+
+	UICorner_38.CornerRadius = UDim.new(0, 2)
+	UICorner_38.Parent = Frame_21
+
+	UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_30.Parent = Frame_21
+
+	gtools.Name = "gtools"
+	gtools.Parent = Frame
+	gtools.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	gtools.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	gtools.Position = UDim2.new(0, 600, 0, 200)
+	gtools.Size = UDim2.new(0, 130, 0, 75)
+	gtools.Font = Enum.Font.Code
+	gtools.Text = "Steal Tools"
+	gtools.TextColor3 = Color3.fromRGB(112, 112, 112)
+	gtools.TextSize = 14.000
+
+	UICorner_39.CornerRadius = UDim.new(0, 3)
+	UICorner_39.Parent = gtools
+
+	Frame_22.Parent = gtools
+	Frame_22.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_22.BorderSizePixel = 0
+	Frame_22.Size = UDim2.new(0, 130, 0, 2)
+
+	UICorner_40.CornerRadius = UDim.new(0, 2)
+	UICorner_40.Parent = Frame_22
+
+	UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_31.Parent = Frame_22
+
+	equiptools.Name = "equiptools"
+	equiptools.Parent = Frame
+	equiptools.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	equiptools.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	equiptools.Position = UDim2.new(0, 735, 0, 200)
+	equiptools.Size = UDim2.new(0, 130, 0, 75)
+	equiptools.Font = Enum.Font.Code
+	equiptools.Text = "Equip Tools"
+	equiptools.TextColor3 = Color3.fromRGB(112, 112, 112)
+	equiptools.TextSize = 14.000
+
+	UICorner_41.CornerRadius = UDim.new(0, 3)
+	UICorner_41.Parent = equiptools
+
+	Frame_23.Parent = equiptools
+	Frame_23.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_23.BorderSizePixel = 0
+	Frame_23.Size = UDim2.new(0, 130, 0, 2)
+
+	UICorner_42.CornerRadius = UDim.new(0, 2)
+	UICorner_42.Parent = Frame_23
+
+	UIGradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_32.Parent = Frame_23
+
+	DemeshTools.Name = "Demesh Tools"
+	DemeshTools.Parent = Frame
+	DemeshTools.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	DemeshTools.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	DemeshTools.Position = UDim2.new(0, 735, 0, 285)
+	DemeshTools.Size = UDim2.new(0, 130, 0, 75)
+	DemeshTools.Font = Enum.Font.Code
+	DemeshTools.Text = "Demesh Tools"
+	DemeshTools.TextColor3 = Color3.fromRGB(112, 112, 112)
+	DemeshTools.TextSize = 14.000
+
+	UICorner_43.CornerRadius = UDim.new(0, 3)
+	UICorner_43.Parent = DemeshTools
+
+	Frame_24.Parent = DemeshTools
+	Frame_24.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_24.BorderSizePixel = 0
+	Frame_24.Size = UDim2.new(0, 130, 0, 2)
+
+	UICorner_44.CornerRadius = UDim.new(0, 2)
+	UICorner_44.Parent = Frame_24
+
+	UIGradient_33.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_33.Parent = Frame_24
+
+	Sync.Name = "Sync"
+	Sync.Parent = Frame
+	Sync.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	Sync.BorderColor3 = Color3.fromRGB(54, 54, 54)
+	Sync.Position = UDim2.new(0, 600, 0, 285)
+	Sync.Size = UDim2.new(0, 130, 0, 75)
+	Sync.Font = Enum.Font.Code
+	Sync.Text = "Sync"
+	Sync.TextColor3 = Color3.fromRGB(112, 112, 112)
+	Sync.TextSize = 14.000
+
+	UICorner_45.CornerRadius = UDim.new(0, 3)
+	UICorner_45.Parent = Sync
+
+	Frame_25.Parent = Sync
+	Frame_25.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+	Frame_25.BorderSizePixel = 0
+	Frame_25.Size = UDim2.new(0, 130, 0, 2)
+
+	UICorner_46.CornerRadius = UDim.new(0, 2)
+	UICorner_46.Parent = Frame_25
+
+	UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+	UIGradient_34.Parent = Frame_25
+
+	-- Scripts:
+
+	-- Grips.LocalScript is disabled.
+	-- Lowhold.LocalScript is disabled.
+	local function SABO_fake_script() -- Lowhold.LocalScript 
+		local script = Instance.new('LocalScript', Lowhold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(SABO_fake_script)()
+	local function NHYMOJ_fake_script() -- Lowhold.LocalScript 
+		local script = Instance.new('LocalScript', Lowhold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0, -1, -0)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.007, 0.737, 0.091)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.024, 0, 1)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, -0, 0.024)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Stop()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(NHYMOJ_fake_script)()
+	local function FAMXD_fake_script() -- Lowhold.LocalScript 
+		local script = Instance.new('LocalScript', Lowhold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(FAMXD_fake_script)()
+	-- Shoulder.LocalScript is disabled.
+	local function DMNSK_fake_script() -- Shoulder.LocalScript 
+		local script = Instance.new('LocalScript', Shoulder)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(DMNSK_fake_script)()
+	local function TMYG_fake_script() -- Shoulder.LocalScript 
+		local script = Instance.new('LocalScript', Shoulder)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.021, -1, -0.006)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.064, -2.82, 0.246)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.006, 1)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, -0.021, -0.011)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Stop()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(TMYG_fake_script)()
+	local function ZGYQDK_fake_script() -- Shoulder.LocalScript 
+		local script = Instance.new('LocalScript', Shoulder)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(ZGYQDK_fake_script)()
+	-- NormalHold.LocalScript is disabled.
+	local function SZASDH_fake_script() -- NormalHold.LocalScript 
+		local script = Instance.new('LocalScript', NormalHold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(SZASDH_fake_script)()
+	local function YYUVC_fake_script() -- NormalHold.LocalScript 
+		local script = Instance.new('LocalScript', NormalHold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, 0, 0)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1, -1.25, 0)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0, 0, 1)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0, 1, 0)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(YYUVC_fake_script)()
+	local function EWHUIYD_fake_script() -- NormalHold.LocalScript 
+		local script = Instance.new('LocalScript', NormalHold)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(EWHUIYD_fake_script)()
+	-- Weeni.LocalScript is disabled.
+	local function FGKHS_fake_script() -- Weeni.LocalScript 
+		local script = Instance.new('LocalScript', Weeni)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(FGKHS_fake_script)()
+	local function ASGP_fake_script() -- Weeni.LocalScript 
+		local script = Instance.new('LocalScript', Weeni)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, 0, 0)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(math.random(-3,0), 1, 1.5)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0, 0, 1)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0, 1, 0)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(ASGP_fake_script)()
+	local function VEYVH_fake_script() -- Weeni.LocalScript 
+		local script = Instance.new('LocalScript', Weeni)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(VEYVH_fake_script)()
+	-- gun.LocalScript is disabled.
+	local function INLULCL_fake_script() -- gun.LocalScript 
+		local script = Instance.new('LocalScript', gun)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(INLULCL_fake_script)()
+	local function PHQDLPO_fake_script() -- gun.LocalScript 
+		local script = Instance.new('LocalScript', gun)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, 0, 0)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1, -0.717, 0.22)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0, -0.45, 0.893)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0, 0.893, 0.45)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(PHQDLPO_fake_script)()
+	local function SPWBSPY_fake_script() -- gun.LocalScript 
+		local script = Instance.new('LocalScript', gun)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(SPWBSPY_fake_script)()
+	-- TextButton.LocalScript is disabled.
+	local function EAWUYC_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(EAWUYC_fake_script)()
+	local function ZWMXR_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.004, -0.004, 1)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.827, 1.253, 2.272)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.777, 0.63, 0.006)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.63, 0.777, 0)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(ZWMXR_fake_script)()
+	local function IBTSFF_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(IBTSFF_fake_script)()
+	-- cancel.LocalScript is disabled.
+	local function PGQQSM_fake_script() -- cancel.LocalScript 
+		local script = Instance.new('LocalScript', cancel)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(PGQQSM_fake_script)()
+	local function FYYMX_fake_script() -- cancel.LocalScript 
+		local script = Instance.new('LocalScript', cancel)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(FYYMX_fake_script)()
+	local function GYMDO_fake_script() -- Grips.LocalScript 
+		local script = Instance.new('LocalScript', Grips)
+
+		script.Parent:FindFirstChild("Grips")
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Grips.Visible = true
+		end)
+
+	end
+	coroutine.wrap(GYMDO_fake_script)()
+	local function QFHC_fake_script() -- Grips.LocalScript 
+		local script = Instance.new('LocalScript', Grips)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(QFHC_fake_script)()
+	local function UHJLRI_fake_script() -- Frame.LocalScript 
+		local script = Instance.new('LocalScript', Frame)
+
+		script.Parent.Draggable = true
+		script.Parent.Selectable = true
+		script.Parent.Active = true
+	end
+	coroutine.wrap(UHJLRI_fake_script)()
+	-- Presets.LocalScript is disabled.
+	-- hat.LocalScript is disabled.
+	local function VHGIXL_fake_script() -- hat.LocalScript 
+		local script = Instance.new('LocalScript', hat)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(VHGIXL_fake_script)()
+	local function SWMQYYS_fake_script() -- hat.LocalScript 
+		local script = Instance.new('LocalScript', hat)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.027, 0.046, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.775, 1.285, -1.41)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.006, 0.999, 0.046)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-1, -0.008, 0.026)
+				wait()
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait()
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(SWMQYYS_fake_script)()
+	local function OAML_fake_script() -- hat.LocalScript 
+		local script = Instance.new('LocalScript', hat)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(OAML_fake_script)()
+	-- wings.LocalScript is disabled.
+	local function ZOTYKZK_fake_script() -- wings.LocalScript 
+		local script = Instance.new('LocalScript', wings)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.86, 0.384, 0.337)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.907, 0.586, 1.671)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.352, -0.035, 0.936)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.371, 0.923, -0.105)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.875, 0.384, -0.294)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(3.988, 0.586, 1.362)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.332, -0.035, 0.943)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.352, 0.923, 0.158)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.939, 0.067, 0.337)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(5.751, -1.07, 1.671)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.342, 0.088, 0.936)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.033, 0.994, -0.105)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.954, 0.062, -0.294)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(6.767, -1.439, 1.362)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.3, -0.146, 0.943)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.015, 0.987, 0.158)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.939, 0.067, 0.337)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(5.751, 0.13, 1.671)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.342, 0.088, 0.936)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.033, 0.994, -0.105)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.954, 0.062, -0.294)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(6.767, -0.439, 1.362)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.3, -0.146, 0.943)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.015, 0.987, 0.158)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+
+			end
+
+		end)
+
+	end
+	coroutine.wrap(ZOTYKZK_fake_script)()
+	local function YUFAJJ_fake_script() -- wings.LocalScript 
+		local script = Instance.new('LocalScript', wings)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(YUFAJJ_fake_script)()
+	local function EZTKBNE_fake_script() -- wings.LocalScript 
+		local script = Instance.new('LocalScript', wings)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(EZTKBNE_fake_script)()
+	-- ufo.LocalScript is disabled.
+	local function DNLQ_fake_script() -- ufo.LocalScript 
+		local script = Instance.new('LocalScript', ufo)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(DNLQ_fake_script)()
+	local function VTMHLN_fake_script() -- ufo.LocalScript 
+		local script = Instance.new('LocalScript', ufo)
+
+
+	end
+	coroutine.wrap(VTMHLN_fake_script)()
+	local function SOTHF_fake_script() -- ufo.LocalScript 
+		local script = Instance.new('LocalScript', ufo)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.046, -0.999, -0.027)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.285, -1.41, 5.395)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.046, -0.006)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.008, 0.026, -1)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+
+					game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.999, -0.046, -0.027)
+					game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.195, -1.545, 5.395)
+					game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.046, -0.999, -0.006)
+					game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.026, 0.008, -1)
+					wait(0)
+					game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+					wait(0)
+					h = game.Players.LocalPlayer.Character.Humanoid
+					tracks = h:GetPlayingAnimationTracks()
+					for _,x in pairs(tracks)
+					do x:Play()
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.739, 0.674, -0.027)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.788, -0.247, 5.395)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.674, -0.739, -0.006)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.024, -0.013, -1)
+						wait(0)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+
+							game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.718, 0.696, -0.027)
+							game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.025, 1.545, 5.395)
+							game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.696, 0.718, -0.006)
+							game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.015, -0.023, -1)
+							wait(0)
+							game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+							wait(0)
+							h = game.Players.LocalPlayer.Character.Humanoid
+							tracks = h:GetPlayingAnimationTracks()
+							for _,x in pairs(tracks)
+							do x:Play()
+
+							end
+						end
+					end
+				end
+			end
+		end)
+
+
+
+	end
+	coroutine.wrap(SOTHF_fake_script)()
+	local function EYIYRTT_fake_script() -- ufo.LocalScript 
+		local script = Instance.new('LocalScript', ufo)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(EYIYRTT_fake_script)()
+	-- stand.LocalScript is disabled.
+	local function VIXD_fake_script() -- stand.LocalScript 
+		local script = Instance.new('LocalScript', stand)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(VIXD_fake_script)()
+	local function VQFQX_fake_script() -- stand.LocalScript 
+		local script = Instance.new('LocalScript', stand)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.727, -2.533, -4.324)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.45, -0.041, -0.892)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.853, -3.739, -2.984)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.009, -0.999, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.893, 0.011, 0.45)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.017, -2.171, -3.849)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.727, -3.488, -4.324)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.007, -0.04, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.371, -5.202, -4.324)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.259, -0.965, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.966, 0.259, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.014, -0.038, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.154, -0.466, -4.324)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.271, -0.962, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.962, -0.271, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.005, -0.04, -0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.394, -2.843, -4.324)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.038, -0.998, 0.041)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.039, -0.003)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+			end
+		end)
+
+	end
+	coroutine.wrap(VQFQX_fake_script)()
+	local function QBUHUDL_fake_script() -- stand.LocalScript 
+		local script = Instance.new('LocalScript', stand)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(QBUHUDL_fake_script)()
+	-- scythe.LocalScript is disabled.
+	local function VVHSO_fake_script() -- scythe.LocalScript 
+		local script = Instance.new('LocalScript', scythe)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(VVHSO_fake_script)()
+	local function JNEGBNV_fake_script() -- scythe.LocalScript 
+		local script = Instance.new('LocalScript', scythe)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.155, 0.696, -0.009)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.67, 0.696, -0.009)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-3.476, 0.696, -0.009)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.988, 0.148, 0.05)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.025, -4.525, -0.009)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.052, 0.011, 0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.148, 0.989, -0.018)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+				game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.767, 0.64, 0.05)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.995, -5.668, -0.009)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.05, -0.018, 0.999)
+				game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.64, 0.768, -0.018)
+				wait(0)
+				game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+				wait(0)
+				h = game.Players.LocalPlayer.Character.Humanoid
+				tracks = h:GetPlayingAnimationTracks()
+				for _,x in pairs(tracks)
+				do x:Play()
+				end
+
+
+			end
+		end)
+
+	end
+	coroutine.wrap(JNEGBNV_fake_script)()
+	local function IPZVBI_fake_script() -- scythe.LocalScript 
+		local script = Instance.new('LocalScript', scythe)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(IPZVBI_fake_script)()
+	-- cancel_2.LocalScript is disabled.
+	local function WMGL_fake_script() -- cancel_2.LocalScript 
+		local script = Instance.new('LocalScript', cancel_2)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	end
+	coroutine.wrap(WMGL_fake_script)()
+	local function KTRATAX_fake_script() -- cancel_2.LocalScript 
+		local script = Instance.new('LocalScript', cancel_2)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(KTRATAX_fake_script)()
+	local function NSCG_fake_script() -- Presets.LocalScript 
+		local script = Instance.new('LocalScript', Presets)
+
+		script.Parent:FindFirstChild("Presets")
+		script.Parent.MouseButton1Down:Connect(function()
+			script.Parent.Presets.Visible = true
+		end)
+
+	end
+	coroutine.wrap(NSCG_fake_script)()
+	local function ASWFMOY_fake_script() -- Presets.LocalScript 
+		local script = Instance.new('LocalScript', Presets)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(ASWFMOY_fake_script)()
+	local function HUCES_fake_script() -- Dupe.LocalScript 
+		local script = Instance.new('LocalScript', Dupe)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			for i=1,tonumber(script.Parent.Parent.Amount.Text) or 1 do
+				char=game.Players.LocalPlayer.Character
+				game.Players.LocalPlayer.Character=nil
+				game.Players.LocalPlayer.Character=char
+				char.Animate:Destroy()
+				char.HumanoidRootPart.CFrame=CFrame.new(0,9999,0)
+				wait(.1)
+				char.HumanoidRootPart.Anchored=true
+				for i,v in pairs(char:GetChildren()) do
+					if v:IsA("Tool") then
+						v.Parent=game.Players.LocalPlayer.Backpack
+					end
+				end
+				wait(game.Players.RespawnTime-0.3)
+				local t = {}
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					v.Parent=char
+					v.Parent=workspace
+					t[i]=v
+				end
+				char.Humanoid:Destroy()
+				game.Players.LocalPlayer.Character=nil
+				game.Players.LocalPlayer.CharacterAdded:Wait()
+				char=game.Players.LocalPlayer.Character
+				char:WaitForChild("Humanoid")
+				wait(.1)
+				for i,v in pairs(t) do
+					char.Humanoid:EquipTool(v)
+				end
+				wait(.3)
+			end	
+		end)
+
+	end
+	coroutine.wrap(HUCES_fake_script)()
+	local function MRTGEG_fake_script() -- Dupe.LocalScript 
+		local script = Instance.new('LocalScript', Dupe)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(MRTGEG_fake_script)()
+	local function XHNAC_fake_script() -- gtools.LocalScript 
+		local script = Instance.new('LocalScript', gtools)
+
+		local plr = game:GetService("Players").LocalPlayer
+		local charr = game:GetService("Players").LocalPlayer.Character
+		local players = game:GetService("Players"):GetPlayers()
+		local gameid = game.PlaceId
+
+		script.Parent.MouseButton1Down:Connect(function()
+			for _,v in pairs(game.workspace:GetChildren()) do
+				if v:IsA("Tool") then
+					v.Handle.CFrame = plr.Character.Head.CFrame
+				end
+			end
+
+
+		end)
+	end
+	coroutine.wrap(XHNAC_fake_script)()
+	local function UDUA_fake_script() -- gtools.LocalScript 
+		local script = Instance.new('LocalScript', gtools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(UDUA_fake_script)()
+	local function GQDA_fake_script() -- equiptools.LocalScript 
+		local script = Instance.new('LocalScript', equiptools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+				if tool:IsA("Tool") then	                    
+					tool.Parent = game:GetService("Players").LocalPlayer.Character -- I didn't use Equip because the Equip function unequips any other tools in your character.
+				end
+			end
+		end)
+
+
+
+	end
+	coroutine.wrap(GQDA_fake_script)()
+	local function CRMBHF_fake_script() -- equiptools.LocalScript 
+		local script = Instance.new('LocalScript', equiptools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(CRMBHF_fake_script)()
+	local function VFFB_fake_script() -- equiptools.LocalScript 
+		local script = Instance.new('LocalScript', equiptools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(VFFB_fake_script)()
+	local function AHZN_fake_script() -- DemeshTools.LocalScript 
+		local script = Instance.new('LocalScript', DemeshTools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			while true do
+				for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+					if tool:IsA("Tool") then
+						tool.Handle.Mesh:Destroy()
+						tool.Parent = game:GetService("Players").LocalPlayer.Character -- I didn't use Equip because the Equip function unequips any other tools in your character.
+					end
+				end		
+
+			end
+		end)
+	end
+	coroutine.wrap(AHZN_fake_script)()
+	local function FDRJG_fake_script() -- DemeshTools.LocalScript 
+		local script = Instance.new('LocalScript', DemeshTools)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(FDRJG_fake_script)()
+	local function UZHHBBP_fake_script() -- Sync.LocalScript 
+		local script = Instance.new('LocalScript', Sync)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			print(pcall(function()
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					if v:IsA("Tool") and v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound") then
+						coroutine.wrap(function()
+							v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").Playing=false
+							wait()
+							v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").TimePosition=0
+							v:FindFirstChildOfClass("Part"):FindFirstChildOfClass("Sound").Playing=true
+						end)()
+					end
+				end
+			end))
+		end)
+	end
+	coroutine.wrap(UZHHBBP_fake_script)()
+	local function HDGQ_fake_script() -- Sync.LocalScript 
+		local script = Instance.new('LocalScript', Sync)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(HDGQ_fake_script)()
+	local function WWEBIIR_fake_script() -- Sync.LocalScript 
+		local script = Instance.new('LocalScript', Sync)
+
+		script.Parent.MouseButton1Down:Connect(function()
+			local kan = Instance.new("Sound", game.Workspace)
+			kan.Volume = 5
+			kan.TimePosition = 0
+			kan.PlaybackSpeed = 1.01
+			kan.Pitch = 1.01
+			kan.SoundId = "rbxassetid://7148646001"
+			kan.Name = "Clicksfx"
+			kan.Looped = false
+			kan:Play()
+		end)
+	end
+	coroutine.wrap(WWEBIIR_fake_script)()
+	local function NJVFPGO_fake_script() -- Frame.LocalScript 
+		local script = Instance.new('LocalScript', Frame)
+
+		local plr = game:GetService("Players").LocalPlayer
+		local charr = game:GetService("Players").LocalPlayer.Character
+		local players = game:GetService("Players"):GetPlayers()
+		local gameid = game.PlaceId
+
+		print("\nExecuted.")
+
+		plr.Chatted:connect(function(message)
+			if message:sub(1,5) == "$play" then
+				id = message:sub(2)
+				local args = message:split(" ")
+
+				for _,v in pairs(plr.Backpack:GetChildren()) do
+					if v:IsA("Tool") and string.lower(v.Name) == "boombox" then v.Parent = plr.Character end
+				end
+
+				wait(.1)
+
+				local id = args[2]
+
+				local zeros = 199950
+				for _,v in pairs(plr.Character:GetChildren()) do
+					if v:IsA("Tool") and string.lower(v.Name) == "boombox" then v:FindFirstChildOfClass("RemoteEvent"):FireServer("PlaySong", ("0"):rep(zeros)..id, 1, 0, 0) end
+				end 
+			end
+		end)
+	end
+	coroutine.wrap(NJVFPGO_fake_script)()
+
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 2)
+UICorner_5.Parent = TextButton
+
+Frame_4.Parent = TextButton
+Frame_4.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0, 200, 0, 2)
+
+UICorner_6.CornerRadius = UDim.new(0, 2)
+UICorner_6.Parent = Frame_4
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = Frame_4
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = TextButton
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(75, 75, 75)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(85, 85, 85)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = Frame
+
+-- Scripts:
+
+local function WRFRMY_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	script.Parent.Text = " ".. game.Players.LocalPlayer.Name ..". "
+end
+coroutine.wrap(WRFRMY_fake_script)()
+local function GECVA_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 200, 0, 200)
+end
+coroutine.wrap(GECVA_fake_script)()
+-- TextButton.LocalScript is disabled.
+local function OTIR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Transparency = 0.1
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.2
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.3
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.4
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.5
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.6
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.7
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.8
+		wait(.025)
+		script.Parent.Parent.Transparency = 0.9
+		wait(.025)
+		script.Parent.Parent.Transparency = 1
+		wait(.025)
+		script.Parent.Parent.Parent.Enabled = false
+		print("Disappearing complete!")
+	end)
+	
+	
+end
+coroutine.wrap(OTIR_fake_script)()
+local function IDJA_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local kan = Instance.new("Sound", game.Workspace)
+		kan.Volume = 5
+		kan.TimePosition = 0
+		kan.PlaybackSpeed = 1.01
+		kan.Pitch = 1.01
+		kan.SoundId = "rbxassetid://7148646001"
+		kan.Name = "Clicksfx"
+		kan.Looped = false
+		kan:Play()
+	end)
+end
+coroutine.wrap(IDJA_fake_script)()
+local function GXBQ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+	script.Parent.Parent.ResetOnSpawn =true
+	script.Parent.Active = true
+end
+coroutine.wrap(GXBQ_fake_script)()
+local function UTYJD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0.09, true); -- drag speed
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(UTYJD_fake_script)()
