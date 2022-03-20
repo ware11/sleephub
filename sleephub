@@ -1921,7 +1921,7 @@ TextButton.MouseButton1Down:Connect(function()
 		local script = Instance.new('LocalScript', DemeshTools)
 
 		script.Parent.MouseButton1Down:Connect(function()
-			while true do
+			
 				for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
 					if tool:IsA("Tool") then
 						tool.Handle.Mesh:Destroy()
@@ -1929,7 +1929,7 @@ TextButton.MouseButton1Down:Connect(function()
 					end
 				end		
 
-			end
+		
 		end)
 	end
 	coroutine.wrap(AHZN_fake_script)()
